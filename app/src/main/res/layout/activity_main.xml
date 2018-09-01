@@ -9,27 +9,62 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="4dp"
-        android:alpha="0.5"
-        android:background="@color/colorPrimaryDark"
-        android:gravity="bottom"
-        android:lineSpacingExtra="10sp"
-        android:rotation="0"
-        android:text="@string/welcomeMessage"
-        android:textColor="@android:color/white"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:typeface="serif"
-        android:visibility="visible"
-        app:fontFamily="serif"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="sure why not"
-        tools:textColor="@android:color/holo_green_dark" />
+		android:id = "@+id/textView"
+		android:layout_width = "0dp"
+		android:layout_height = "wrap_content"
+		android:layout_marginRight = "4dp"
+		android:layout_marginEnd = "4dp"
+		android:alpha = "0.8"
+		android:background = "@color/colorPrimaryDark"
+		android:gravity = "bottom"
+		android:lineSpacingExtra = "10sp"
+		android:rotation = "0"
+		android:text = "@string/welcomeMessage"
+		android:textColor = "@android:color/white"
+		android:textSize = "25sp"
+		android:textAlignment = "center"
+		android:textStyle = "bold"
+		android:typeface = "serif"
+		android:visibility = "visible"
+		app:fontFamily = "serif"
+		app:layout_constraintBottom_toBottomOf = "parent"
+		app:layout_constraintLeft_toLeftOf = "parent"
+		app:layout_constraintRight_toRightOf = "parent"
+		app:layout_constraintTop_toTopOf = "parent"
+		tools:text = "sure why not"
+		tools:textColor = "@android:color/holo_green_dark"
+		/>
+	
+	<Button
+		android:id = "@+id/button1"
+		android:layout_width = "wrap_content"
+		android:layout_height = "wrap_content"
+		android:text = "Left"
+		app:layout_constraintBottom_toBottomOf = "parent"
+		app:layout_constraintLeft_toLeftOf = "parent"
+		app:layout_constraintTop_toTopOf = "@+id/textView"
+		/>
+	
+	<Button
+		android:id = "@+id/button2"
+		android:layout_width = "wrap_content"
+		android:layout_height = "wrap_content"
+		android:text = "Right"
+		app:layout_constraintBottom_toBottomOf = "parent"
+		app:layout_constraintRight_toRightOf = "parent"
+		app:layout_constraintTop_toTopOf = "@+id/textView"
+		/>
+	
+	<Button
+		android:id = "@+id/button3"
+		android:layout_width = "wrap_content"
+		android:layout_height = "wrap_content"
+		android:text = "Center"
+		app:layout_constraintBottom_toBottomOf = "parent"
+		app:layout_constraintRight_toLeftOf = "@id/button2"
+		app:layout_constraintLeft_toRightOf = "@id/button1"
+		app:layout_constraintTop_toTopOf = "@+id/textView"
+		/>
+
 
 </android.support.constraint.ConstraintLayout>
